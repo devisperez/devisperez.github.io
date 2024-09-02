@@ -11,42 +11,85 @@
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f8f9fa;
             color: #333;
-        }
-        .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
         }
+
+        /* Estilo para la barra lateral fija */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
         .profile-pic {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
+
         .profile-description {
             margin-top: 20px;
-            max-width: 600px;
         }
+
         .header {
             font-size: 2rem;
             margin-bottom: 20px;
         }
+
+        /* Estilo para la sección de proyectos */
+        .content {
+            margin-left: 320px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h2 {
+            font-size: 1.5rem;
+            color: #008CBA;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Devis Alexander Perez Campo</h1>
-        </div>
+    <!-- Módulo Fijo Izquierdo -->
+    <div class="sidebar">
+        <h1 class="header">Devis Perez</h1>
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQG_Ac_eGj-FFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712274984957?e=1730937600&v=beta&t=03yQaS1DLXgIIKCO35Ddx1v2tclNt94iPR4HlesaKcQ" alt="Foto de Devis Perez" class="profile-pic">
         <div class="profile-description">
-            <p>Ingeniero Civil, Especialista en Aprovechamiento de Recursos Hidráulicos y Master en Modelización de sistemas Hídricos, con desarrollos investigativos en el área de la Modelización Hidrológica, la Hidráulica Marítima y la Geomorfología Costera..</p>
+            <p>Ingeniero Civil, Especialista en Aprovechamiento de Recursos Hidráulicos y Master en Modelización de sistemas Hídricos, con desarrollos investigativos en el área de la Modelización Hidrológica, la Hidráulica Marítima y la Geomorfología Costera</p>
         </div>
+    </div>
+
+    <!-- Módulo Desplazable Derecho -->
+    <div class="content">
+        <div class="project">
+            <h2>Proyecto 1</h2>
+            <p>Descripción breve del Proyecto 1.</p>
+        </div>
+        <div class="project">
+            <h2>Proyecto 2</h2>
+            <p>Descripción breve del Proyecto 2.</p>
+        </div>
+        <!-- Agrega más proyectos aquí -->
     </div>
 </body>
 </html>
