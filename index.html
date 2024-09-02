@@ -1,34 +1,52 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Devis Perez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
+            background-color: #f8f9fa;
             color: #333;
         }
-        p {
-            color: #666;
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-        a {
-            color: #008CBA;
-            text-decoration: none;
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
         }
-        a:hover {
-            text-decoration: underline;
+        .profile-description {
+            margin-top: 20px;
+            max-width: 600px;
+        }
+        .header {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenido a mi Portafolio</h1>
-    <p>Hola, soy Devis Perez. Este es mi portafolio en línea donde puedes encontrar algunos de mis proyectos y trabajos.</p>
-    <p><a href="https://github.com/devisperez" target="_blank">Visita mi GitHub</a> para ver más detalles sobre mis proyectos.</p>
+    <div class="container">
+        <div class="header">
+            <h1>Devis Alexander Perez Campo</h1>
+        </div>
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQG_Ac_eGj-FFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712274984957?e=1730937600&v=beta&t=03yQaS1DLXgIIKCO35Ddx1v2tclNt94iPR4HlesaKcQ" alt="Foto de Devis Perez" class="profile-pic">
+        <div class="profile-description">
+            <p>Ingeniero Civil, Especialista en Aprovechamiento de Recursos Hidráulicos y Master en Modelización de sistemas Hídricos, con desarrollos investigativos en el área de la Modelización Hidrológica, la Hidráulica Marítima y la Geomorfología Costera..</p>
+        </div>
+    </div>
 </body>
 </html>
