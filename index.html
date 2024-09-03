@@ -19,6 +19,7 @@
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
+            text-align: justify;
         }
 
         .sidebar {
@@ -27,7 +28,7 @@
             padding: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
-            text-align: center;
+            text-align: justify;
         }
 
         .profile-pic {
@@ -49,6 +50,7 @@
             padding: 20px;
             background-color: #ffffff;
             flex-grow: 1;
+            text-align: justify;
         }
 
         .portfolio-introduction p {
@@ -96,10 +98,22 @@
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
+        
+        .gif-container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .gif-container img {
             width: 100%;
             max-width: 400px;
+            height: auto;
+        }
+
+        .gif-container2 img {
+            width: 100%;
+            max-width: 1000px;
             height: auto;
         }
 
@@ -114,7 +128,7 @@
                 position: fixed;
                 top: 0;
                 left: 0;
-                text-align: left;
+                text-align: justify;
             }
 
             .profile-pic {
@@ -236,9 +250,9 @@
                 prever inundaciones y diseñar infraestructuras hídricas eficientes.</p>
             <p>A continuación, se presenta un análisis hidrológico que he desarrollado en el software HEC-HMS (izquierda) para la cuenca del río Magdalena, y un modelo de pronóstico de caudales 
                 máximos (Derecha) utilizando Simulink.</p>
-            <div class="gif-container">
-                <img src="images/hechms.gif" alt="GIF 5"/>
-                <img src="images/simulink-min.gif" alt="GIF 6"/>
+            <div class="gif-container2 column">
+                <img src="images/GR4J.gif" alt="Modelo GR4J" />
+                <img src="images_static/GR4J.png" alt="Modelo GR4J" />
             </div>
         </div>
     </div>
