@@ -4,7 +4,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portafolio de Devis Pérez Campo, Ingeniero Civil especializado en Modelización de Sistemas Hídricos.">
     <meta name="author" content="Devis Pérez Campo">
     <title>Portafolio de Devis Pérez Campo</title>
@@ -17,33 +17,26 @@
             background-color: #ffffff;
             color: #333;
             display: flex;
+            flex-direction: column;
             box-sizing: border-box;
         }
 
         .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 400px;
-            height: 100%;
+            width: 100%;
             background-color: #ffffff;
             padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
+            text-align: center;
         }
 
         .profile-pic {
             border-radius: 50%;
-            width: 350px;
-            height: 350px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             margin-bottom: 20px;
             border: 5px solid #008CBA;
-        }
-
-        .profile-description {
-            margin-top: 20px;
-            text-align: justify;
         }
 
         .header {
@@ -53,23 +46,20 @@
         }
 
         .content {
-            margin-left: 420px;
             padding: 20px;
-            flex-grow: 1;
             background-color: #ffffff;
-            margin-right: 30px;
+            flex-grow: 1;
         }
 
         .portfolio-introduction p {
             text-align: justify;
             line-height: 1.6;
             color: #555;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .project {
             margin-bottom: 30px;
-            margin-right: 20px;
         }
 
         .project h2 {
@@ -104,31 +94,36 @@
             gap: 10px;
             justify-content: center;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
 
         .gif-container img {
-            width: 400px; /* Ajusta el tamaño según sea necesario */
+            width: 100%;
+            max-width: 400px;
             height: auto;
         }
 
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
             }
 
-            .content {
-                margin-left: 0;
+            .sidebar {
+                width: 400px;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                text-align: left;
             }
 
             .profile-pic {
-                width: 200px;
-                height: 200px;
+                width: 350px;
+                height: 350px;
             }
 
-            .gif-container img {
-                width: 75px; /* Ajuste para pantallas pequeñas */
+            .content {
+                margin-left: 420px;
             }
         }
     </style>
@@ -151,6 +146,7 @@
         </div>
         <div class="tools-section">
             <p>
+                <!-- Herramientas/Lenguajes de Programación -->
                 <a href="https://earthengine.google.com/" target="_blank" rel="noreferrer">
                     <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine" width="40" height="40" style="display: inline-block; vertical-align: middle; margin-right: 10px;"/>
                 </a>
@@ -216,6 +212,7 @@
             <div class="gif-container">
                 <img src="images/huricane-min.gif" alt="GIF 1"/>
                 <img src="images/pp-min.gif" alt="GIF 2"/>
+            </div>
         </div>
         <div class="project">
             <h2>Hidráulica Marítima</h2>
@@ -225,14 +222,25 @@
                 Estos modelos son cruciales para el diseño de obras marítimas y la gestión costera.</p>
             <p>A continuación, se presentan dos modelos que he desarrolado y que simulan la propagación de una ola significativa sobre la costa de Cartagena, Colombia: un modelo bidimensional (izquierda) desarrollado mediante la 
                 herramienta STWAVE en SMS y un modelo unidimensional (Derecha) desarrollado en Python.</p>
-            
-            <!-- Contenedor para las imágenes -->
             <div class="gif-container">
                 <img src="images_static/bidimensional.png" alt="Modelo bidimensional STWAVE" />
                 <img src="images_static/unidimensional.png" alt="Modelo unidimensional en Python" />
             </div>
         </div>
-        <!-- Agrega más proyectos aquí -->
+        <div class="project">
+            <h2>Modelización Hidrológica</h2>
+            <p>La modelización hidrológica utiliza herramientas computacionales para representar y predecir el comportamiento del ciclo del agua en cuencas hidrográficas. 
+                Modelos como GR4J y HBV, integrados en sistemas como HEC-HMS, permiten simular la relación entre la precipitación, la escorrentía y otros procesos hidrológicos. 
+                Estos modelos se alimentan de datos climáticos e hidrológicos, incluyendo observaciones de estaciones y datos satelitales, para generar simulaciones que informan 
+                la toma de decisiones en la gestión de recursos hídricos. En mi experiencia, he aplicado estos modelos para evaluar la disponibilidad de agua en regiones áridas, 
+                prever inundaciones y diseñar infraestructuras hídricas eficientes.</p>
+            <p>A continuación, se presenta un análisis hidrológico que he desarrollado en el software HEC-HMS (izquierda) para la cuenca del río Magdalena, y un modelo de pronóstico de caudales 
+                máximos (Derecha) utilizando Simulink.</p>
+            <div class="gif-container">
+                <img src="images/hechms.gif" alt="GIF 5"/>
+                <img src="images/simulink-min.gif" alt="GIF 6"/>
+            </div>
+        </div>
     </div>
 </body>
 </html>
