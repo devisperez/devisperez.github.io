@@ -5,26 +5,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Devis Perez</title>
+    <meta name="description" content="Portafolio de Devis Pérez Campo, Ingeniero Civil especializado en Modelización de Sistemas Hídricos.">
+    <meta name="author" content="Devis Pérez Campo">
+    <title>Portafolio de Devis Pérez Campo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             color: #333;
             display: flex;
+            box-sizing: border-box;
         }
 
-        /* Estilo para la barra lateral fija */
         .sidebar {
             position: fixed;
             top: 0;
             left: 0;
-            width: 300px;
+            width: 400px;
             height: 100%;
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             box-sizing: border-box;
@@ -32,30 +34,42 @@
 
         .profile-pic {
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 350px;
+            height: 350px;
             object-fit: cover;
             margin-bottom: 20px;
+            border: 5px solid #008CBA;
         }
 
         .profile-description {
             margin-top: 20px;
+            text-align: justify;
         }
 
         .header {
             font-size: 2rem;
             margin-bottom: 20px;
+            color: #008CBA;
         }
 
-        /* Estilo para la sección de proyectos */
         .content {
-            margin-left: 320px;
+            margin-left: 420px;
             padding: 20px;
             flex-grow: 1;
+            background-color: #ffffff;
+            margin-right: 30px;
+        }
+
+        .portfolio-introduction p {
+            text-align: justify;
+            line-height: 1.6;
+            color: #555;
+            margin-right: 20px;
         }
 
         .project {
             margin-bottom: 30px;
+            margin-right: 20px;
         }
 
         .project h2 {
@@ -66,24 +80,142 @@
 
         .project p {
             margin-bottom: 10px;
+            color: #666;
+            text-align: justify;
+        }
+
+        .tools-section {
+            margin-bottom: 30px;
+        }
+
+        .tools-section h2 {
+            font-size: 1.5rem;
+            color: #008CBA;
+            margin-bottom: 10px;
+        }
+
+        .tools-section p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gif-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .gif-container img {
+            width: 400px; /* Ajusta el tamaño según sea necesario */
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+            .profile-pic {
+                width: 200px;
+                height: 200px;
+            }
+
+            .gif-container img {
+                width: 75px; /* Ajuste para pantallas pequeñas */
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Módulo Fijo Izquierdo -->
     <div class="sidebar">
-        <h1 class="header">Devis Perez</h1>
+        <h1 class="header">Devis Pérez Campo</h1>
         <img src="https://media.licdn.com/dms/image/v2/D4E03AQG_Ac_eGj-FFQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712274984957?e=1730937600&v=beta&t=03yQaS1DLXgIIKCO35Ddx1v2tclNt94iPR4HlesaKcQ" alt="Foto de Devis Perez" class="profile-pic">
         <div class="profile-description">
-            <p>Ingeniero Civil, Especialista en Aprovechamiento de Recursos Hidráulicos y Master en Modelización de sistemas Hídricos, con desarrollos investigativos en el área de la Modelización Hidrológica, la Hidráulica Marítima y la Geomorfología Costera</p>
+            <p>Ingeniero Civil, Especialista en Aprovechamiento de Recursos Hidráulicos y Master en Modelización de sistemas Hídricos, con desarrollos investigativos en el área de la Modelización Hidrológica, la Hidráulica Marítima y la Geomorfología Costera.</p>
         </div>
     </div>
 
-    <!-- Módulo Desplazable Derecho -->
     <div class="content">
+        <h1 class="header">PORTAFOLIO</h1>
+        <div class="portfolio-introduction">
+            <p>La hidrología y la hidráulica son pilares fundamentales en la ingeniería moderna, desempeñando un papel crucial en la planificación, diseño y gestión de recursos hídricos. Estas disciplinas no solo permiten la creación de infraestructuras seguras y eficientes, sino que también son esenciales para la sostenibilidad y la resiliencia frente a eventos climáticos extremos. Su aplicación se extiende a diversas ramas de la ingeniería, como la minería, la generación energética y la infraestructura.</p>
+            <p>Integrar la programación en estas áreas ha revolucionado la forma en que abordamos los proyectos de consultoría. Mediante el uso de herramientas avanzadas de modelado y simulación, es posible predecir con mayor precisión el comportamiento del agua, optimizar los diseños y reducir significativamente los tiempos de ejecución. Esta sinergia entre ingeniería y tecnología no solo mejora los resultados, sino que también promueve un uso más eficiente y sostenible de los recursos hídricos.</p>
+            <p>Software y Herramientas/Lenguajes de Programación: </p>
+        </div>
+        <div class="tools-section">
+            <p>
+                <a href="https://earthengine.google.com/" target="_blank" rel="noreferrer">
+                    <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine" width="40" height="40" style="display: inline-block; vertical-align: middle; margin-right: 10px;"/>
+                </a>
+                <a href="https://www.hec.usace.army.mil/software/hec-hms/" target="_blank" rel="noreferrer">
+                    <img src="https://www.hec.usace.army.mil/confluence/download/attachments/18483248/HMSUM?version=1&modificationDate=1582640976954&api=v2" alt="HEC-HMS" width="40" height="40" style="display: inline-block; vertical-align: middle;"/>
+                </a>
+                <a href="https://www.aquaveo.com/software/sms-surface-water-modeling-system-introduction" target="_blank" rel="noreferrer">
+                    <img src="https://www.aquaveo.com/images/med-sms-logo.png" alt="SMS" width="60" height="40"/>
+                </a>
+                <a href="https://iberaula.es/" target="_blank" rel="noreferrer">
+                    <img src="https://iberaula.es/cvdata/cntr2/spc21/dtos/mdia/About-the-model/PT_Splash_Ibersplash.png" alt="Iber" width="70" height="40"/>
+                </a>
+                <a href="https://www.hec.usace.army.mil/software/hec-ras/" target="_blank" rel="noreferrer">
+                    <img src="https://www.hec.usace.army.mil/confluence/download/attachments/39297660/RASUM?version=1&modificationDate=1605741150854&api=v2" alt="HEC-RAS" width="40" height="40"/>
+                </a>
+                <a href="https://www.epa.gov/water-research/epanet" target="_blank" rel="noreferrer">
+                    <img src="https://tecnologia.uniandes.edu.co/wp-content/uploads/2022/07/epanet-logo.svg" alt="EPANET" width="40" height="40"/>
+                </a>
+                <a href="https://www.it.unlv.edu/software/epa-swmm" target="_blank" rel="noreferrer">
+                    <img src="https://www.it.unlv.edu/sites/default/files/styles/250_width/public/sites/default/files/assets/software/logos/epa.png?itok=8If6biwc" alt="EPA-SWMM" width="40" height="40"/>
+                </a>
+                <a href="https://www.autodesk.com/latam/products/autocad/overview?cjdata=MXxOfDB8WXww&panel=buy&AID=13955714&PID=8299320&SID=jkp_CjwKCAjwxNW2BhAkEiwA24Cm9IyjPbq8x8wQ7tyDeyDKOCGP4UAmk8sHnnmZfVKx9zuH-IiTm6VTAhoCaecQAvD_BwE&cjevent=d9b7872c695611ef81bd03e70a82b821&mktvar002=afc_latam_deeplink&affname=8299320_13955714&term=1-YEAR&tab=subscription&plc=ACDIST" target="_blank" rel="noreferrer">
+                    <img src="https://prosoftnet.com/cdn/shop/files/autodesk-civil-3d-small-social-400_grande.png?v=1693678092" alt="Autodesk Civil 3D" width="40" height="40"/>
+                </a>
+                <a href="https://www.microsoft.com/es-co/microsoft-365/excel" target="_blank" rel="noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/587px-Microsoft_Excel_2013-2019_logo.svg.png" alt="Microsoft Excel" width="40" height="40"/>
+                </a>
+                <a href="https://www.esri.com/es-es/arcgis/products/arcgis-pro/overview?srsltid=AfmBOookwa1hY7LKKus0RPjXQkxxTxPboSWylXgapsoNfUX3TG6WTu5Z" target="_blank" rel="noreferrer">
+                    <img src="https://www.esri.es/content/dam/distributor-share/esri-es/common/product-logos/ArcGIS-Pro.png" alt="ArcGIS Pro" width="40" height="40"/>
+                </a>
+                <a href="https://www.qgis.org/" target="_blank" rel="noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/QGIS_logo_new.svg/256px-QGIS_logo_new.svg.png" alt="QGIS" width="40" height="40"/>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
+                </a>
+                <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" width="40" height="40"/>
+                </a>
+                <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
+                </a>
+                <a href="https://jupyter.org/" target="_blank" rel="noreferrer">
+                    <img src="https://jupyter.org/assets/share.png" alt="Jupyter" width="70" height="40"/>
+                </a>
+                <a href="https://colab.google/" target="_blank" rel="noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colaboratory" width="40" height="40"/>
+                </a>
+            </p>
+        </div>
         <div class="project">
-            <h2>Proyecto 1</h2>
-            <p>Descripción breve del Proyecto 1.</p>
+            <h2>Hidrocimatología</h2>
+            <p>Analisis Hidroclimatológico para distintas escalas espaciales y temporales, esto nos permite estudiar y caracterizar los regímenes medios y extremos (máximos y mínimos) de variables 
+                climáticas relacionadas con el ciclo del agua. Esto incluye la precipitación, la temperatura, la velocidad del viento, la humedad del suelo, la evapotranspiración 
+                y la descarga fluvial, tanto líquida como de sedimentos</p>
+            <p>El análisis hidroclimatológico se puede desarrollar a partir de información en campo (estaciones hidroclimatológicas) y de sensores remotos. La hidroclimatología es esencial para la gestión 
+                de recursos hídricos, la prevención de desastres naturales, el diseño de infraestructuras, la agricultura, el estudio del cambio climático y la generación de energía hidroeléctrica. Proporciona 
+                datos cruciales para predecir la disponibilidad de agua, evaluar riesgos de inundaciones y sequías, optimizar el riego agrícola, diseñar infraestructuras resistentes y planificar la producción 
+                de energía renovable, contribuyendo así a la sostenibilidad y resiliencia en diversas áreas de la ingeniería y la gestión ambiental. </p>
+            <p>A continuación, se presenta el analsis de los datos de velocidad del viento y precipitación total durante el paso de la tormenta tropical Julia (Octubre 2023) sobre el mar Caribe. Este analsis 
+                se desarrolló a partir de la información del reanálisis ERA5, del Centro Europeo de Previsiones Meteorológicas a Plazo Medio
+            </p>
+            <div class="gif-container">
+                <img src="images/huricane-min.gif" alt="GIF 1"/>
+                <img src="images/pp-min.gif" alt="GIF 2"/>
         </div>
         <div class="project">
             <h2>Proyecto 2</h2>
