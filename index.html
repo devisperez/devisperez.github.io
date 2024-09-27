@@ -49,6 +49,7 @@
             font-size: 2.5rem;
             margin-bottom: 20px;
             color: #008CBA;
+			text-align: center;
         }
 
         .content {
@@ -82,19 +83,24 @@
         }
 
         .tools-section {
-            margin-bottom: 30px;
-        }
+			text-align: center; /* Centra el contenido */
+			margin: 5px 0; /* Espacio arriba y abajo */
+		}
 
-        .tools-section h2 {
-            font-size: 2rem;
-            color: #008CBA;
-            margin-bottom: 10px;
-        }
+		.tools-icons {
+			display: grid; /* Usa CSS Grid para la cuadrícula */
+			grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Ajusta el número de columnas */
+			gap: 5px; /* Espacio entre los iconos */
+			justify-items: center; /* Centra los iconos en cada celda */
+		}
 
-        .tools-section p {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+		.tools-icons a {
+			display: flex; /* Asegura que los iconos se alineen bien */
+			justify-content: center; /* Centra los iconos horizontalmente */
+			align-items: center; /* Centra los iconos verticalmente */
+			width: 80px; /* Ancho uniforme para los enlaces */
+			height: 80px; /* Alto uniforme para los enlaces */
+		}
 
         .gif-container {
             display: flex;
@@ -211,7 +217,15 @@
                 <a href="https://github.com/devisperez" target="_blank" rel="noreferrer">
                     <i class="fab fa-github"></i>
                     GitHub
-                </a>
+                </a> |
+				<a href="mailto:devperez602@example.com" target="_blank" rel="noreferrer">
+					<i class="fas fa-envelope"></i>
+					Contáctame
+				</a>
+				<a href="https://wa.me/3003952004" target="_blank" rel="noreferrer">
+					<i class="fab fa-whatsapp"></i>
+					Enviarme un WhatsApp
+				</a>
             </div>
         </div>
     </div>
@@ -224,7 +238,7 @@
             <p><strong>Software y Herramientas/Lenguajes de Programación que integro en el desarrollo de proyectos: </strong> </p>
         </div>
         <div class="tools-section">
-            <p>
+            <div class="tools-icons">
                 <!-- Herramientas/Lenguajes de Programación -->
                 <a href="https://earthengine.google.com/" target="_blank" rel="noreferrer">
                     <img src="https://earthengine.google.com/static/images/earth-engine-logo.png" alt="Google Earth Engine" width="40" height="40" style="display: inline-block; vertical-align: middle; margin-right: 10px;"/>
@@ -274,12 +288,12 @@
                 <a href="https://colab.google/" target="_blank" rel="noreferrer">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" alt="Google Colaboratory" width="40" height="40"/>
                 </a>
-            </p>
+            </div>
         </div>
         <p><strong>Áreas Técnicas en las que aporto experiencia significativa: </strong> </p>
         <div class="project">
             <h2>Hidroclimatología</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>La hidroclimatología se enfoca en comprender cómo el clima, a través de variables como la precipitación, temperatura, humedad, viento y radiación solar, influye en los procesos hidrológicos como la evapotranspiración, la escorrentía, la infiltración y el almacenamiento de agua en cuerpos de agua y acuíferos.</p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <ul>
@@ -307,7 +321,7 @@
         </div>
         <div class="project">
             <h2>Hidráulica Marítima</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>La hidráulica marítima es un campo de la hidráulica que aborda los desafíos asociados a la dinámica de los cuerpos de agua en zonas costeras y marítimas.</p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <ul>
@@ -334,7 +348,7 @@
         </div>
         <div class="project">
             <h2>Hidrología</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>Es la ciencia que estudia el ciclo del agua, su distribución, movimiento y propiedades en la atmósfera, la superficie y el subsuelo terrestre, con el fin de gestionar recursos hídricos y entender fenómenos relacionados con el agua, como inundaciones y sequías. </p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <p> Mi enfoque combina el uso de modelos numéricos y análisis de datos para optimizar el manejo del agua en proyectos de energía, infraestructura, planificación urbana y muchos mas.</p>
@@ -364,7 +378,7 @@
         </div>
         <div class="project">
             <h2>Modelización Hidráulica</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>La hidráulica superficial se centra en el estudio del flujo del agua sobre la superficie terrestre o estructuras hidráulicas, como en ríos, canales y drenajes. Es esencial para diseñar infraestructuras hidráulicas y prevenir inundaciones. </p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <p>Mi experiencia incluye la simulación de flujos para el análisis de riesgo por inundación y el análisis de soluciones para optimizar la gestión del agua en proyectos de infraestructura vial y energía.</p>
@@ -400,7 +414,7 @@
         </div>
         <div class="project">
             <h2>Ingeniería de Sistemas Hídricos</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>La ingeniería de sistemas hídricos se especializa en el diseño y gestión de infraestructuras para el manejo de aguas superficiales y sistemas de saneamiento. Este campo abarca el desarrollo de soluciones eficientes para el control de aguas pluviales, fluviales, la gestión de escorrentías, el diseño de redes de saneamiento, entre otros aspectos.</p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <ul>
@@ -438,7 +452,7 @@
         </div>
         <div class="project">
             <h2>Cambio Climático</h2>
-            <h3>¿Que es?</h3>
+            <h3>¿Qué es?</h3>
             <p>El cambio climático se refiere a las alteraciones a largo plazo en los patrones meteorológicos globales, impulsadas principalmente por actividades humanas como la quema de combustibles fósiles y la deforestación. Estas variaciones afectan el clima, alterando la disponibilidad de recursos naturales como el agua.</p>
             <h3>¿Cuáles son las áreas específicas de mi experiencia en este ámbito?</h3>
             <p>Mi experiencia se centra en la evaluación de proyecciones de cambio climático según el sexto informe del IPCC, utilizando los modelos del CMIP6 para analizar sus impactos en los recursos hídricos y proponer soluciones adaptativas en proyectos de infraestructura.</p>
